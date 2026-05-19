@@ -3,9 +3,15 @@ import React from "react";
 const Header = () => {
   return (
     <div className="flex items-end justify-between">
-      <h1 className="text-2xl font-medium">Hello <br /> <span className="text-3xl font-semibold">Faheem 🖐️</span></h1>
+      <h1 className="text-2xl font-medium">
+        Hello <br /> <span className="text-3xl font-semibold">Faheem 🖐️</span>
+      </h1>
       <div className="flex items-center gap-3">
-        <a href="https://github.com/faheeemm/ems" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/faheeemm/ems"
+          target="_blank"
+          rel="noreferrer"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
