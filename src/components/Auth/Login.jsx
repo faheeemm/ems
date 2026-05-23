@@ -12,7 +12,7 @@ const Login = ({ handleLogin }) => {
   };
 
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
+    <div className="flex h-screen w-full items-center justify-center overflow-x-hidden">
       <div className="border-2 rounded-xl border-emerald-600 p-20">
         <form
           onSubmit={(e) => {
