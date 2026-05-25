@@ -1,6 +1,6 @@
 import React from "react";
 
-const AcceptedTask = () => {
+const AcceptTask = () => {
   return (
     <div className="flex-shrink-0 h-full w-[400px] p-5 bg-red-400 rounded-xl">
       <div className="flex items-center justify-between">
@@ -22,4 +22,4 @@ const AcceptedTask = () => {
   );
 };
 
-export default AcceptedTask;
+export default AcceptTask;
