@@ -1,8 +1,18 @@
+
 const employees = [
   {
     id: 1,
-    email: "employee1@example.com",
+    firstName: "Faheem",
+    email: "faheemahmedhyd81@gmail.com",
     password: "123",
+
+    taskNumbers: {
+      active: 1,
+      newTask: 1,
+      completed: 1,
+      failed: 1
+    },
+
     tasks: [
       {
         active: true,
@@ -39,8 +49,17 @@ const employees = [
 
   {
     id: 2,
-    email: "employee2@example.com",
+    firstName: "Ufraan",
+    email: "kurosen930@gmail.com",
     password: "123",
+
+    taskNumbers: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 1
+    },
+
     tasks: [
       {
         active: true,
@@ -87,8 +106,17 @@ const employees = [
 
   {
     id: 3,
-    email: "employee3@example.com",
+    firstName: "Santra",
+    email: "santra@gmail.com",
     password: "123",
+
+    taskNumbers: {
+      active: 2,
+      newTask: 1,
+      completed: 2,
+      failed: 1
+    },
+
     tasks: [
       {
         active: true,
@@ -145,8 +173,17 @@ const employees = [
 
   {
     id: 4,
-    email: "employee4@example.com",
+    firstName: "Raqueeb",
+    email: "raqueeb@gmail.com",
     password: "123",
+
+    taskNumbers: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 0
+    },
+
     tasks: [
       {
         active: true,
@@ -183,8 +220,17 @@ const employees = [
 
   {
     id: 5,
-    email: "employee5@example.com",
+    firstName: "Faheem",
+    email: "faheemahmedhyd82@gmail.com",
     password: "123",
+
+    taskNumbers: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 1
+    },
+
     tasks: [
       {
         active: true,
@@ -233,6 +279,7 @@ const employees = [
 const admin = [
   {
     id: 1,
+    firstName: "Admin",
     email: "admin@example.com",
     password: "123"
   }
