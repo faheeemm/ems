@@ -15,5 +15,5 @@ body {
 }
 
 #allTask > .child::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
