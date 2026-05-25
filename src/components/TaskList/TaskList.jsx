@@ -13,6 +13,15 @@ const TaskList = ({ data }) => {
         if (elem.active) {
           return <AcceptTask />
         }
+        if (elem.newTask) {
+          return <NewTask />
+        }
+        if (elem.completed) {
+          return <CompleteTask />
+        }
+        if (elem.failed) {
+          return <FailedTask />
+        }
           
       })}
     </div>

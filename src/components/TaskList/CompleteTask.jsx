@@ -15,7 +15,7 @@ const CompleteTask = () => {
         scrambled it to make a type specimen book
       </p>
       <div className="mt-2">
-        <button className="w-full">Complete</button>
+        <button className="w-full bg-green-500 py-1 px-2 text-sm">Complete</button>
       </div>
     </div>
   );

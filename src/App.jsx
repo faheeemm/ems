@@ -10,18 +10,18 @@ import { AuthContext } from "./context/AuthProvider";
 import { data } from "autoprefixer";
 
 const App = () => {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(null); // admin / employee
   const [loggedInUserData, setLoggedInUserData] = useState(null);
   const authData = useContext(AuthContext);
 
-  // useEffect(() => {
-  //   if (authData) {
-  //     const loggedInUser = localStorage.getItem("loggedInUser");
-  //     if (loggedInUser) {
-  //       setUser(loggedInUser.role);
-  //     }
-  //   }
-  // }, [authData]); // if authData change, then it re-run
+  useEffect(() => {
+    const loggedInUser = localStorage.getItem('loggedInUser')
+
+    if (loggedInUser) {
+      console.log("User logged in")
+    }
+    
+  },)
 
   const handleLogin = (email, password) => {
     if (email == "admin@me.com" && password == "123") {
