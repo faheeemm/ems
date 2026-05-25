@@ -5,10 +5,7 @@ const AllTask = () => {
   const authData = useContext(AuthContext);
 
   return (
-    <div
-      id="allTask"
-      className="bg-[#1C1C1C] p-5 rounded mt-5"
-    >
+    <div id="allTask" className="bg-[#1C1C1C] p-5 rounded mt-5">
       <div className="bg-red-400 mb-2 py-2 px-4 flex justify-between rounded">
         <h2 className="text-lg font-medium w-1/5">Employee Name</h2>
         <h3 className="text-lg font-medium w-1/5">New Task</h3>
@@ -21,10 +18,18 @@ const AllTask = () => {
           return (
             <div className="border-2 border-emerald-500 mb-2 py-2 px-4 flex justify-between rounded">
               <h2 className=" text-lg font-medium w-1/5">{elem.firstName}</h2>
-              <h3 className=" text-lg font-medium w-1/5 text-white">{elem.taskNumbers.newTask}</h3>
-              <h5 className=" text-lg font-medium w-1/5 text-white">{elem.taskNumbers.active}</h5>
-              <h5 className=" text-lg font-medium w-1/5 text-white">{elem.taskNumbers.completed}</h5>
-              <h5 className=" text-lg font-medium w-1/5 text-white">{elem.taskNumbers.failed}</h5>
+              <h3 className=" text-lg font-medium w-1/5 text-white">
+                {elem.taskNumbers.newTask}
+              </h3>
+              <h5 className=" text-lg font-medium w-1/5 text-white">
+                {elem.taskNumbers.active}
+              </h5>
+              <h5 className=" text-lg font-medium w-1/5 text-white">
+                {elem.taskNumbers.completed}
+              </h5>
+              <h5 className=" text-lg font-medium w-1/5 text-white">
+                {elem.taskNumbers.failed}
+              </h5>
             </div>
           );
         })}
