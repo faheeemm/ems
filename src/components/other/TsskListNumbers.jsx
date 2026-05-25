@@ -1,6 +1,6 @@
 import React from "react";
 
-const TaskListNumbers = ({data}) => {
+const TaskListNumbers = ({ data }) => {
   return (
     <div className="flex m-10 justify-between gap-5 screen">
       <div className="rounded-xl w-[45%] py-6 px-9 bg-red-400">
@@ -20,7 +20,7 @@ const TaskListNumbers = ({data}) => {
         <h3 className="text-xl font-medium">Failed Task</h3>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default TaskListNumbers
+export default TaskListNumbers;
