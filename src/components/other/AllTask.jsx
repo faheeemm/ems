@@ -14,9 +14,9 @@ const AllTask = () => {
         <h5 className="text-lg font-medium w-1/5">Failed</h5>
       </div>
       <div className="child overflow-auto">
-        {authData.employees.map((elem) => {
+        {authData.employees.map((elem, idx) => {
           return (
-            <div className="border-2 border-emerald-500 mb-2 py-2 px-4 flex justify-between rounded">
+            <div key={idx} className="border-2 border-emerald-500 mb-2 py-2 px-4 flex justify-between rounded">
               <h2 className=" text-lg font-medium w-1/5">{elem.firstName}</h2>
               <h3 className=" text-lg font-medium w-1/5 text-white">
                 {elem.taskNumbers.newTask}
