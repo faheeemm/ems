@@ -72,4 +72,4 @@ src/
 
 ## 📄 License
 
-MIT © [Faheem](https://github.com/faheeemm)
+[MIT](./LICENSE) © [Faheem](https://github.com/faheeemm)
