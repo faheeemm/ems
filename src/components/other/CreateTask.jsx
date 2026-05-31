@@ -16,8 +16,8 @@ const CreateTask = () => {
   const submitHandler = (e) => {
     e.preventDefault()
 
-    setTask({taskTitle, taskDescription, taskDate, category, assignTo, active:false, NewTask:true, failed:true, completed:false})
-    
+    setTask({taskTitle, taskDescription, taskDate, category, active:false, NewTask:true, failed:true, completed:false})
+    console.log(task)
   };
 
   return (
