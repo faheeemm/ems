@@ -4,20 +4,27 @@ import { useState } from "react";
 import NewTask from "../TaskList/NewTask";
 
 const CreateTask = () => {
+  const [taskTitle, setTaskTitle] = useState("");
+  const [taskDescription, setTaskDescription] = useState("");
+  const [taskDate, setTaskDate] = useState("");
+  const [assignTo, setAssignTo] = useState("");
+  const [category, setCategory] = useState("");
 
-  const [taskTitle, setTaskTitle] = useState('')
-  const [taskDescription, setTaskDescription] = useState('')
-  const [taskDate, setTaskDate] = useState('')
-  const [assignTo, setAssignTo] = useState('')
-  const [category, setCategory] = useState('')
+  const [task, setTask] = useState({});
 
-  const [task, setTask] = useState({})
-  
   const submitHandler = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    setTask({taskTitle, taskDescription, taskDate, category, active:false, NewTask:true, failed:true, completed:false})
-    console.log(task)
+    setTask({
+      taskTitle,
+      taskDescription,
+      taskDate,
+      category,
+      active: false,
+      NewTask: true,
+      failed: true,
+      completed: false,
+    });
   };
 
   return (
@@ -34,7 +41,7 @@ const CreateTask = () => {
             <input
               value={taskTitle}
               onChange={(e) => {
-                setTaskTitle(e.target.value)
+                setTaskTitle(e.target.value);
               }}
               className="text-sm py-1 px-2 w-4/5 rounded outline-none bg-transparent border-[1px] border-gray-400 mb-4"
               type="text"
@@ -46,7 +53,7 @@ const CreateTask = () => {
             <input
               value={taskDate}
               onChange={(e) => {
-                setTaskDate(e.target.value)
+                setTaskDate(e.target.value);
               }}
               className="text-sm py-1 px-2 w-4/5 rounded outline-none bg-transparent border-[1px] border-gray-400 mb-4"
               type="date"
@@ -57,7 +64,7 @@ const CreateTask = () => {
             <input
               value={assignTo}
               onChange={(e) => {
-                setAssignTo(e.target.value)
+                setAssignTo(e.target.value);
               }}
               className="text-sm py-1 px-2 w-4/5 rounded outline-none bg-transparent border-[1px] border-gray-400 mb-4"
               type="text"
@@ -66,10 +73,10 @@ const CreateTask = () => {
           </div>
           <div>
             <h3 className="text-sm text-gray-300 mb-0.5">Category</h3>
-              <input
+            <input
               value={category}
               onChange={(e) => {
-                setCategory(e.target.value)
+                setCategory(e.target.value);
               }}
               className="text-sm py-1 px-2 w-4/5 rounded outline-none bg-transparent border-[1px] border-gray-400 mb-4"
               type="text"
@@ -83,7 +90,7 @@ const CreateTask = () => {
           <textarea
             value={taskDescription}
             onChange={(e) => {
-              setTaskDescription(e.target.value)
+              setTaskDescription(e.target.value);
             }}
             className="w-full h-44 text-sm py-2 px-4 rounded outline-none bg-transparent border-[1px] border-gray-400"
             name=""
