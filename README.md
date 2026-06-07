@@ -61,15 +61,6 @@ src/
 
 ---
 
-## 📌 Roadmap
-
-- [ ] Backend integration (Node.js + MongoDB)
-- [ ] JWT-based authentication
-- [ ] Task deadlines and priority levels
-- [ ] Email notifications
-
----
-
 ## 📄 License
 
 [MIT](./LICENSE) © [Faheem](https://github.com/faheeemm)
