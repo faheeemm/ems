@@ -10,22 +10,37 @@ const CreateTask = () => {
   const [assignTo, setAssignTo] = useState("");
   const [category, setCategory] = useState("");
 
-  const [task, setTask] = useState({});
+  const [newTask, setNewTask] = useState({});
 
   const submitHandler = (e) => {
     e.preventDefault();
 
-    setTask({
+    setNewTask({
       taskTitle,
       taskDescription,
       taskDate,
       category,
       active: false,
       NewTask: true,
-      failed: true,
+      failed: false,
       completed: false,
     });
 
+    const data = JSON.parse(localStorage.getItem("employees"));
+
+    data.forEach(function (elem) {
+      if (assignTo == elem.firstName) {
+        elem.tasks.push(newTask);
+        console.log(elem);
+      }
+    });
+
+    // setting tasks information empty
+    setTaskTitle('')
+    setCategory('')
+    setAssignTo('')
+    setTaskDate('')
+    setTaskDescription('')
     
   };
 
