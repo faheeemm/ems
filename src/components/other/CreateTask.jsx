@@ -1,8 +1,4 @@
-import React from "react";
-import { use } from "react";
-import { useState } from "react";
-import NewTask from "../TaskList/NewTask";
-import { useContext } from "react";
+import React, { useState, useContext } from "react";
 import { AuthContext } from "../../context/AuthProvider";
 
 const CreateTask = () => {

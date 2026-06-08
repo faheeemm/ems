@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { setLocalStorage } from "../../utils/localStorage";
 
 const Header = (props) => {
