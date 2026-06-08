@@ -30,16 +30,16 @@ const CreateTask = () => {
       completed: false,
     });
 
-    const data = userData.employees
-    console.log(data)
+    const data = userData
 
     data.forEach(function (elem) {
       if (assignTo == elem.firstName) {
         elem.tasks.push(newTask);
-        // elem.taskCounts.newTask = elem.taskCounts.newTask + 1
+        elem.taskNumbers.newTask = elem.taskNumbers.newTask + 1
       }
     });
     setUserData(data);
+    console.log(data)
 
     // setting tasks information empty
     setTaskTitle("");
