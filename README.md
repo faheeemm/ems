@@ -46,8 +46,7 @@ npm run dev
 ```
 src/
 ├── context/
-│   ├── AuthContext.jsx       # Handles login state & user role
-│   └── TaskContext.jsx       # Manages task data globally
+│   └── AuthProvider.jsx       # Handles login state & user role & Manages task data globally
 ├── components/
 │   ├── Auth/                 # Login screen
 │   ├── Dashboard/
