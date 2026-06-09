@@ -10,27 +10,27 @@ const CreateTask = () => {
   const [assignTo, setAssignTo] = useState("");
   const [category, setCategory] = useState("");
 
-  const [newTask, setNewTask] = useState({});
+  // const [newTask, setNewTask] = useState({});
 
   const submitHandler = (e) => {
     e.preventDefault();
 
-    setNewTask({
+    const task = {
       taskTitle,
       taskDescription,
       taskDate,
       category,
       active: false,
-      NewTask: true,
+      newTask: true,
       failed: false,
       completed: false,
-    });
+    };
 
     const data = userData
 
     data.forEach(function (elem) {
       if (assignTo == elem.firstName) {
-        elem.tasks.push(newTask);
+        elem.tasks.push(task);
         elem.taskNumbers.newTask = elem.taskNumbers.newTask + 1
       }
     });
