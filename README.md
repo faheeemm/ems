@@ -1,20 +1,20 @@
-# 🗂️ Employee Management System (EMS)
+# Employee Management System (EMS)
 
 A role-based task management web app built with React. Admins can create and assign tasks to employees, while employees can track and update their assigned work — all persisted via localStorage.
 
 ---
 
-## ✨ Features
+## Features
 
-- 🔐 **Authentication** — Login system with role detection (Admin / Employee)
-- 🧑‍💼 **Admin Dashboard** — Create tasks, assign them to employees, and monitor progress
-- 👷 **Employee Dashboard** — View assigned tasks and update their status
-- 🗃️ **localStorage Persistence** — Data survives page refreshes without a backend
-- ⚛️ **Context API** — Global state management via `AuthContext` and `TaskContext`
+- **Authentication** — Login system with role detection (Admin / Employee)
+- **Admin Dashboard** — Create tasks, assign them to employees, and monitor progress
+- **Employee Dashboard** — View assigned tasks and update their status
+- **localStorage Persistence** — Data survives page refreshes without a backend
+- **Context API** — Global state management via `AuthContext` and `TaskContext`
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -23,7 +23,7 @@ A role-based task management web app built with React. Admins can create and ass
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ```bash
 # Clone the repo
@@ -41,7 +41,7 @@ npm run dev
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -61,6 +61,6 @@ src/
 
 ---
 
-## 📄 License
+## License
 
 [MIT](./LICENSE) © [Faheem](https://github.com/faheeemm)
